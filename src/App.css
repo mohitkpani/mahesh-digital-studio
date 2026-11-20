@@ -1,0 +1,51 @@
+/* ==========================================
+   MAHESH DIGITAL STUDIO - APP STYLES
+========================================== */
+
+/* Main application wrapper */
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main page content */
+
+main {
+  width: 100%;
+  min-width: 0;
+}
+
+/* Prevent accidental horizontal overflow */
+
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Smooth section navigation */
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 88px;
+}
+
+/* Responsive section navigation */
+
+@media (max-width: 760px) {
+  html {
+    scroll-padding-top: 76px;
+  }
+}
+
+/* Accessibility: reduced motion */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

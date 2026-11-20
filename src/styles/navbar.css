@@ -1,0 +1,208 @@
+.navbar {
+    width: 100%;
+    background: var(--background);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid var(--border);
+}
+
+.navbar-container {
+    width: min(100% - 48px, var(--container));
+    height: 88px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+/* Brand */
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    flex-shrink: 0;
+}
+
+.brand-logo-image {
+    width: 48px;
+    height: 48px;
+    display: block;
+    object-fit: contain;
+    flex-shrink: 0;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover .brand-logo-image {
+    transform: rotate(-5deg) scale(1.08);
+}
+
+.brand-text strong {
+    display: block;
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+.brand-text small {
+    display: block;
+    margin-top: 4px;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--text-secondary);
+}
+
+/* Desktop navigation */
+
+.desktop-nav {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+}
+
+.desktop-nav a {
+    color: var(--text-secondary);
+    font-size: 13px;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.desktop-nav a:hover {
+    color: var(--primary);
+}
+
+/* WhatsApp contact */
+
+.navbar-contact {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    background: var(--text-primary);
+    color: white;
+    padding: 13px 18px;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 700;
+    transition: all 0.25s ease;
+    flex-shrink: 0;
+}
+
+.navbar-contact:hover {
+    background: var(--primary);
+    transform: translateY(-2px);
+}
+
+/* Mobile menu */
+
+.mobile-menu-toggle,
+.mobile-nav {
+    display: none;
+}
+
+@media (max-width: 900px) {
+    .navbar-container {
+        gap: 15px;
+    }
+
+    .desktop-nav {
+        gap: 18px;
+    }
+
+    .navbar-contact {
+        padding: 12px 14px;
+    }
+}
+
+@media (max-width: 760px) {
+    .navbar-container {
+        width: min(100% - 32px, var(--container));
+        height: 76px;
+    }
+
+    .brand-logo-image {
+        width: 43px;
+        height: 43px;
+    }
+
+    .brand-text strong {
+        font-size: 15px;
+    }
+
+    .desktop-nav,
+    .navbar-contact {
+        display: none;
+    }
+
+    .mobile-menu-toggle {
+        display: grid;
+        place-items: center;
+        border: none;
+        background: var(--lavender);
+        color: var(--text-primary);
+        width: 43px;
+        height: 43px;
+        border-radius: 13px;
+        flex-shrink: 0;
+    }
+
+    .mobile-nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: var(--background);
+        padding: 10px 24px 24px;
+        border-bottom: 1px solid var(--border);
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-8px);
+        transition: all 0.25s ease;
+    }
+
+    .mobile-nav.active {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    .mobile-nav>a {
+        padding: 13px 8px;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .mobile-nav .mobile-whatsapp {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        justify-content: center;
+        background: var(--primary);
+        color: white;
+        border-radius: 12px;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 360px) {
+    .brand-logo-image {
+        width: 39px;
+        height: 39px;
+    }
+
+    .brand-text strong {
+        font-size: 14px;
+    }
+
+    .brand-text small {
+        font-size: 8px;
+        letter-spacing: 0.6px;
+    }
+}

@@ -1,0 +1,412 @@
+/* ==========================================
+   MAHESH DIGITAL STUDIO - FOOTER
+========================================== */
+
+.site-footer {
+    position: relative;
+    width: 100%;
+    background: #282238;
+    color: #ffffff;
+    overflow: hidden;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.site-footer *,
+.site-footer *::before,
+.site-footer *::after {
+    box-sizing: border-box;
+}
+
+.site-footer a {
+    text-decoration: none;
+}
+
+/* TOP ACCENT */
+
+.site-footer::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg,
+            #7650E8,
+            #D8B9FF,
+            #F8D8F0,
+            #CDEEE5);
+}
+
+/* MAIN GRID */
+
+.site-footer .footer-container {
+    display: grid !important;
+    grid-template-columns: 1.1fr 0.65fr 1fr 1.1fr;
+    align-items: start;
+    gap: 35px;
+    padding-top: 65px;
+    padding-bottom: 55px;
+}
+
+/* BRAND */
+
+.site-footer .footer-brand {
+    min-width: 0;
+}
+
+.site-footer .footer-logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    max-width: 100%;
+    color: #ffffff;
+}
+
+/* SMALL SHOP LOGO */
+
+.site-footer .footer-logo-image {
+    display: block !important;
+    width: 44px !important;
+    height: 44px !important;
+    min-width: 44px !important;
+    max-width: 44px !important;
+    min-height: 44px !important;
+    max-height: 44px !important;
+    flex: 0 0 44px !important;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.site-footer .footer-logo:hover .footer-logo-image {
+    transform: rotate(-5deg) scale(1.05);
+}
+
+/* BRAND TEXT */
+
+.site-footer .footer-brand-text {
+    display: block;
+    min-width: 0;
+}
+
+.site-footer .footer-logo strong {
+    display: block;
+    font-family: 'Manrope', sans-serif;
+    font-size: 17px;
+    font-weight: 800;
+}
+
+.site-footer .footer-logo small {
+    display: block;
+    margin-top: 4px;
+    color: #C7BCE0;
+    font-size: 9px;
+    letter-spacing: 1px;
+}
+
+.site-footer .footer-description {
+    max-width: 270px;
+    margin-top: 20px;
+    color: #C5BED1;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+/* SOCIAL ICONS */
+
+.site-footer .footer-socials {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    margin-top: 22px;
+}
+
+.site-footer .footer-socials a {
+    display: inline-flex !important;
+    width: 40px;
+    height: 40px;
+    flex: 0 0 40px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #514762;
+    border-radius: 12px;
+    background: #373047 !important;
+    color: #DCD3FF;
+    transition: 0.25s ease;
+}
+
+.site-footer .footer-socials a:hover {
+    transform: translateY(-4px);
+    border-color: #7650E8;
+    background: #7650E8 !important;
+    color: #ffffff;
+}
+
+/* COLUMN HEADINGS */
+
+.site-footer .footer-links h3,
+.site-footer .footer-info h3,
+.site-footer .footer-location h3 {
+    margin: 0 0 24px;
+    color: #ffffff;
+    font-family: 'Manrope', sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.site-footer .footer-links h3::after,
+.site-footer .footer-info h3::after,
+.site-footer .footer-location h3::after {
+    content: "";
+    display: block;
+    width: 34px;
+    height: 3px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background: #A78BFA;
+}
+
+/* QUICK LINKS */
+
+.site-footer .footer-links {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start;
+    min-width: 0;
+}
+
+.site-footer .footer-links a {
+    display: block !important;
+    width: fit-content;
+    margin: 0 0 14px;
+    color: #C5BED1;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.site-footer .footer-links a:hover {
+    color: #DCD3FF;
+    transform: translateX(4px);
+}
+
+/* CONTACT INFORMATION */
+
+.site-footer .footer-info {
+    min-width: 0;
+}
+
+.site-footer .footer-info-item {
+    display: flex !important;
+    flex-direction: row !important;
+    width: 100%;
+    min-width: 0;
+    align-items: flex-start;
+    gap: 12px;
+    margin: 0 0 17px;
+    color: #ffffff;
+}
+
+.site-footer .footer-info-icon {
+    display: flex !important;
+    width: 36px;
+    height: 36px;
+    flex: 0 0 36px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 11px;
+    background: #373047 !important;
+    color: #DCD3FF;
+}
+
+.site-footer .footer-user-symbol {
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.site-footer .footer-info-item>div {
+    display: block;
+    min-width: 0;
+}
+
+.site-footer .footer-info-item small {
+    display: block;
+    margin-bottom: 5px;
+    color: #AFA5C3;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.site-footer .footer-info-item p {
+    color: #F1EDF7;
+    font-size: 12px;
+    line-height: 1.7;
+    overflow-wrap: anywhere;
+}
+
+/* LOCATION */
+
+.site-footer .footer-location {
+    min-width: 0;
+}
+
+.site-footer .footer-location-heading {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.site-footer .footer-location-heading span {
+    color: #C7BCE0;
+    font-size: 8px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.site-footer .footer-map {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    border: 3px solid #514762;
+    border-radius: 15px;
+    background: #EEEAE2;
+}
+
+.site-footer .footer-map iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.site-footer .footer-directions {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 14px;
+    color: #DCD3FF;
+    font-size: 12px;
+    font-weight: 800;
+    transition: gap 0.25s ease, color 0.25s ease;
+}
+
+.site-footer .footer-directions:hover {
+    gap: 12px;
+    color: #ffffff;
+}
+
+/* COPYRIGHT */
+
+.site-footer .footer-bottom {
+    border-top: 1px solid #494054;
+    background: #211C2E;
+}
+
+.site-footer .footer-bottom-inner {
+    display: flex;
+    min-height: 65px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.site-footer .footer-bottom p {
+    color: #BDB5CB;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.site-footer .footer-bottom p strong {
+    color: #ffffff;
+}
+
+.site-footer .footer-back-top {
+    color: #DCD3FF;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.site-footer .footer-back-top:hover {
+    color: #ffffff;
+}
+
+/* ACCESSIBILITY */
+
+.site-footer a:focus-visible {
+    outline: 2px solid #DCD3FF;
+    outline-offset: 4px;
+    border-radius: 4px;
+}
+
+/* TABLET */
+
+@media (max-width: 800px) {
+    .site-footer .footer-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 40px 25px;
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+    .site-footer .footer-container {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 35px;
+        padding-top: 45px;
+        padding-bottom: 40px;
+    }
+
+    .site-footer .footer-description {
+        max-width: 100%;
+    }
+
+    .site-footer .footer-map {
+        height: 240px;
+    }
+
+    .site-footer .footer-bottom-inner {
+        min-height: 75px;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}
+
+/* SMALL MOBILE */
+
+@media (max-width: 360px) {
+    .site-footer .footer-logo-image {
+        width: 40px !important;
+        height: 40px !important;
+        min-width: 40px !important;
+        max-width: 40px !important;
+        flex-basis: 40px !important;
+    }
+
+    .site-footer .footer-map {
+        height: 210px;
+    }
+}
+
+/* REDUCED MOTION */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .site-footer a,
+    .site-footer .footer-logo-image,
+    .site-footer .footer-socials a,
+    .site-footer .footer-directions {
+        transition: none;
+    }
+
+    .site-footer .footer-socials a:hover,
+    .site-footer .footer-logo:hover .footer-logo-image,
+    .site-footer .footer-links a:hover {
+        transform: none;
+    }
+}
